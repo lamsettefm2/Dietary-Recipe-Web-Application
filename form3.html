@@ -1,0 +1,37 @@
+<!--
+The purpose of this html file is to serve as a login page. Here the user enters their username and password
+If login is successful as in the username and password the user provides is in my database, then the user
+is sent to the main page with all the options listed. If login fails, user is redirected to form2.html
+which is the welcome page
+Author: Malak Lamsettef
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Form Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>Welcome to the Login Page</h1>
+        <p>Please enter an existing username and password
+        <p>
+        <!-- 
+            Once user enters their username and password and clicks submit, the data is sent to the page
+            specified in the action attribute
+        -->
+        <form action="db-cgi0.cgi" method="POST">
+            Username: <input type="text" name="username"> <br />
+
+            Password: <input type="password" name="password" />
+            <input type="submit" value="Submit" />
+    </div>
+    </form>
+</body>
+
+</html>

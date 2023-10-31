@@ -1,0 +1,63 @@
+<!--
+The purpose of this html file is to serve as the comment page which allows users 
+to enter their name, title, and message. Once the user clicks submit, 
+the data is sent to the page specified in the action attribute. In other words,
+it is printed in the blog section
+Author: Malak Lamsettef
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <header>
+        <div id="menu" class="fas fa-bars"></div>
+        <!-- Navigation bar that links to the other webpages -->
+        <nav class="navbar">
+            <a href="options.html">Home</a>
+            <a href="options.cgi">Blog</a>
+            <a href="index.cgi">All Recipes</a>
+            <a href="comments.html">Comment</a>
+            <a href="add.html">Add Your Recipe</a>
+        </nav>
+
+    </header>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Search Bar</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+
+<section class="contact" id="contact">
+
+    <h1 class="heading">Comment Section</h1>
+
+    <div class="row">
+        <!--
+        Once user enters their information and clicks submit, the data is sent to the page
+        specified in the action attribute
+        -->
+        <form action="comments.cgi" method="POST">
+            <!-- Input for Name -->
+            <div class="inputBox">
+                <h3>full name</h3>
+                <input type="text" placeholder="enter your name" name="name">
+            </div>
+            <!-- Input for Title -->
+            <div class="inputBox">
+                <h3>title</h3>
+                <input type="title" placeholder="enter your title" name="title">
+            </div>
+            <!-- Input for Comment -->
+            <div class="inputBox">
+                <h3>message</h3>
+                <textarea name="comment" cols="30" rows="10" placeholder="message"></textarea>
+            </div>
+
+            <input type="submit" value="send" class="btn">
+            <!-- Closes the form -->
+        </form>
+
+    </div>
+</section>
+
+</html>

@@ -1,0 +1,67 @@
+<!--
+The purpose of this html file is to serve as the add recipe page which allows
+users to enter their recipe name, diet type, and description/instructions. 
+Once the user clicks submit, the data is sent to the page specified in the action attribute. In other words,
+it is printed in the all recipes section
+Author: Malak Lamsettef
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="style3.css">
+
+<head>
+    <header>
+        <div id="menu" class="fas fa-bars"></div>
+        <!-- Navigation bar that links to the other webpages -->
+        <nav class="navbar">
+            <a href="options.html">Home</a>
+            <a href="options.cgi">Blog</a>
+            <a href="index.cgi">All Recipes</a>
+            <a href="comments.html">Comment</a>
+            <a href="add.html">Add Your Recipe</a>
+        </nav>
+
+    </header>
+</head>
+
+<body>
+    <section class="contact" id="contact">
+        <h1 class="heading">Recipe Idea Submission Form</h1>
+        <div class="row">
+
+            <!--
+            Once user enters their information and clicks submit, the data is sent to the page
+            specified in the action attribute
+            -->
+            <form action="add.cgi" method="POST">
+
+                <!-- Input for Recipe Name -->
+                <div class="inputBox">
+                    <h3>Recipe Name</h3>
+                    <input type="text" name="recipename"><br>
+                    <br>
+                </div>
+
+                <!-- Input for Diet Type -->
+                <div class="inputBox">
+                    <input type="radio" id="vegan" name="dietinfo" value="Vegan Diet">
+                    <label for="vegan">Vegan</label><br>
+                    <input type="radio" id="paleo" name="dietinfo" value="Paleo Diet">
+                    <label for="paleo">paleo</label><br>
+                    <input type="radio" id="lowCarb" name="dietinfo" value="Low-Carb Diet">
+                    <label for="lowCarb">Low-Carb</label>
+                </div>
+                <!-- Input for Description/Instructions -->
+                <div class="inputBox">
+                    <h3>Description/Instructions</h3>
+                    <input type="text" name="instructions"><br>
+                    <br>
+                </div>
+                <input type="submit" value="send" class="btn">
+                <!-- Closes form -->
+            </form>
+        </div>
+</body>
+
+</html>

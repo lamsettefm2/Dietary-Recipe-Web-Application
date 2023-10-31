@@ -1,0 +1,125 @@
+/* This css file styles the form which includes buttons, text boxes, fonts, body, and other descriptions for the html pages */
+/* Author: Malak Lamsettef */
+
+/* Overall Layout Styling For Page */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all .3s cubic-bezier(.38, 1.15, .7, 1.12);
+  font-weight: normal;
+  font-family: cursive;
+}
+
+/* Form Styling Starts Here */
+form {
+  padding: 10px;
+}
+
+fieldset {
+  margin-bottom: 0.8em;
+}
+
+legend {
+  font-size: 1.25em;
+}
+
+/* Form Styling For Name Input Box in Add Recipe HTML Page */
+.nameinfo legend {
+  margin-left: -0.1em;
+  font-weight: bold;
+}
+
+/* Form Styling For Instruction Input Box in Add Recipe HTML Page */
+.instruct legend {
+  margin-left: -0.3em;
+  font-weight: bold;
+}
+
+/* Form Styling Ends Here */
+
+/* Adds White Background to HTML Page */
+body {
+  background: #dfe9f5;
+}
+
+/* Main Page Styling Starts Here */
+main {
+  display: flex;
+  align-items: center;
+}
+
+.main--content {
+  flex: 1;
+}
+
+.headline {
+  font-size: 52px;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.description {
+  color: #828282;
+  margin: 0;
+  padding: 0;
+
+  margin-top: 24px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.wrapper {
+  width: 330px;
+  padding: 2rem 0 1rem 0;
+  margin: 50px auto;
+  background: #fff;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 2rem;
+  color: #07001f;
+}
+
+p {
+  margin-bottom: 1.7rem;
+}
+
+/* Main Page Styling Ends Here */
+/* Form Input Styling Starts Here */
+form input {
+  width: 85%;
+  outline: none;
+  border: none;
+  background: #dfe9f5;
+  padding: 12px 14px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+/* Form Input Styling Ends Here */
+
+/* Button Styling Starts Here */
+button {
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  padding: 8px 0;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  width: 85%;
+  background: tomato;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Button Styling Ends Here */

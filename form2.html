@@ -1,0 +1,44 @@
+<!--
+The purpose of this html file is to serve as the welcome page which gives a description of my website, 
+a register button for the user to make an account to access the page, and a login button for users
+who already have an account with us and is already stored in database
+Author: Malak Lamsettef
+-->
+
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Form Page</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<main>
+    <div class="main--content">
+        <h1 class="headline"> Welcome to My <br>
+            Cookbook Page</h1>
+        <p class="description"> I have a list of recipes to meet your dietary needs: <br>Vegan Diet, Paleo Diet, and
+            Low-Carb Diet. <br> <br>
+            This application allows you to view recipes to recreate on your own and gives you the opportunity to add
+            your
+            own recipe to our page. <br> <br> Before we begin, please login or register an account with us today.
+        </p>
+    </div>
+</main>
+
+<body>
+    <div class="wrapper">
+
+        <!-- If the user clicks on register button, it takes them to form4.html which is the registeration page -->
+        <form action="form4.html" method="POST">
+            <input type="submit" value="Register" />
+        </form>
+
+        <!-- If the user clicks on login button, it takes them to form3.html which is the login page -->
+        <form action="form3.html" method="POST">
+            <input type="submit" value="Login" />
+    </div>
+    </form>
+</body>
+
+</html>

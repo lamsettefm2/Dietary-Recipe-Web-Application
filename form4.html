@@ -1,0 +1,43 @@
+<!--
+The purpose of this html file is to serve as a registration page. Here the user fills in the following
+information: username, password, first and last name, email address, street address, city, state, zip, and
+country. Once filled out and they click submit, the user is directed to the main page with all the options
+Author: Malak Lamsettef
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Form Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>Welcome to Register Account Page</h1>
+        <p>To create an account with us, please enter the following information:
+        <p>
+        <!--
+        Once user enters their information and clicks submit, the data is sent to the page
+        specified in the action attribute
+        -->
+        <form action="db-cgi.cgi" method="POST">
+            Username: <input type="text" name="username"> <br />
+            Password: <input type="text" name="password"> <br />
+            First Name: <input type="text" name="firstName"> <br />
+            Last Name: <input type="text" name="lastName"> <br />
+            Email Address: <input type="text" name="email"> <br />
+            Street Address: <input type="text" name="street"> <br />
+            Enter City:<input type="text" name="city"> <br />
+            Enter State: <input type="text" name="state"> <br />
+            Enter Zip: <input type="text" name="zip"> <br />
+            Enter Country: <input type="text" name="country"> <br />
+            <input type="submit" value="Submit" />
+    </div>
+    </form>
+</body>
+
+</html>
